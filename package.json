@@ -1,0 +1,21 @@
+{
+  "name": "verrow",
+  "version": "0.2.0",
+  "license": "MIT",
+  "description": "Open lead data workbench for mapping, cleaning, scoring, and querying messy CSV files.",
+  "scripts": {
+    "install:all": "npm ci --prefix frontend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:rust-ingest": "cargo run --manifest-path rust-services/ingest-api/Cargo.toml",
+    "dev:spacetime": "docker run --rm --pull always -p 3001:3000 clockworklabs/spacetime:v2.2.0 start",
+    "build": "npm run build --prefix frontend",
+    "test": "npm run rust:test",
+    "rust:check": "cargo check --manifest-path rust-services/ingest-api/Cargo.toml",
+    "rust:test": "cargo test --manifest-path rust-services/ingest-api/Cargo.toml",
+    "spacetime:build": "spacetime build --module-path spacetimedb/module",
+    "spacetime:publish": "spacetime publish --module-path spacetimedb/module verrow",
+    "spacetime:generate": "spacetime generate --module-path spacetimedb/module --lang typescript --out-dir frontend/src/spacetime/bindings",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down"
+  }
+}

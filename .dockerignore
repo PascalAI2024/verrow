@@ -1,0 +1,13 @@
+.git
+.github
+node_modules
+frontend/node_modules
+frontend/dist
+rust-services/**/target
+spacetimedb/**/target
+coverage
+uploads
+*.log
+.env
+.env.*
+!.env.example

@@ -1,0 +1,60 @@
+{
+  "name": "verrow-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "vp lint",
+    "lint:eslint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "dev:vite-plus": "vp dev",
+    "build:vite-plus": "tsc && vp build",
+    "lint:vite-plus": "vp lint",
+    "format:vite-plus": "vp fmt",
+    "check:vite-plus": "tsc --noEmit && vp lint",
+    "check:strict:vite-plus": "vp check",
+    "preview:vite-plus": "vp preview",
+    "migrate:vite-plus": "vp migrate"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.0.1",
+    "@mui/material": "^9.0.1",
+    "@mui/system": "^9.0.1",
+    "@mui/x-date-pickers": "^9.2.0",
+    "@tanstack/react-query": "^5.100.10",
+    "axios": "^1.16.1",
+    "date-fns": "^4.1.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-dropzone": "^15.0.0",
+    "react-router-dom": "^7.15.1",
+    "recharts": "^3.8.1",
+    "spacetimedb": "^2.2.0",
+    "verrow": "file:.."
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/parser": "^8.59.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.13",
+    "vite-plus": "^0.1.21"
+  },
+  "overrides": {
+    "happy-dom": "^20.9.0",
+    "minimatch": "^10.2.5"
+  }
+}

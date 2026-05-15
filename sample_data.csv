@@ -1,0 +1,6 @@
+Company,Street,City,State,ZIP,Phone Number,Email Address,Website,Industry Type,Employees,Revenue,Year Founded,About,Contact Person,Job Title
+Example Widget Works,100 Example Ave,New York,NY,10001,(212) 555-0101,ops@example.com,https://example.com,Manufacturing,250,$10M,1985,Synthetic manufacturer sample record,Avery Stone,CEO
+Example Software Lab,200 Signal Way,San Francisco,CA,94107,(415) 555-0102,hello@example.org,https://example.org,Technology,45,$3.5M,2015,Synthetic software sample record,Jordan Lee,CTO
+Example Harvest Co,300 Sample Route,Des Moines,IA,50309,(515) 555-0103,farm@example.net,https://example.net,Agriculture,120,$8.2M,1978,Synthetic agriculture sample record,Riley Brooks,President
+Example Services Group,400 Fixture Ave,Chicago,IL,60607,(312) 555-0104,support@example.edu,https://example.edu,Services,85,$5.1M,2002,Synthetic services sample record,Morgan Chen,Managing Director
+Example Harbor Logistics,500 Harbor Test Blvd,Seattle,WA,98101,(206) 555-0105,shipping@example.com,https://example.com/logistics,Logistics,310,$22M,1992,Synthetic logistics sample record,Taylor Quinn,Operations Director

@@ -1,0 +1,49 @@
+name: verrow
+
+services:
+  spacetimedb:
+    image: clockworklabs/spacetime:v2.2.0
+    command: start
+    ports:
+      - "${SPACETIME_PORT:-3001}:3000"
+
+  spacetimedb-init:
+    image: clockworklabs/spacetime:v2.2.0
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30; do spacetime publish --server http://spacetimedb:3000 --module-path /module --anonymous --yes=all verrow && exit 0; sleep 2; done; exit 1
+    volumes:
+      - ./spacetimedb/module:/module
+    depends_on:
+      - spacetimedb
+
+  rust-ingest-api:
+    build:
+      context: ./rust-services/ingest-api
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      INGEST_API_BIND_ADDR: 0.0.0.0:3010
+      SPACETIMEDB_URL: http://spacetimedb:3000
+      SPACETIMEDB_MODULE: ${SPACETIMEDB_MODULE:-verrow}
+    ports:
+      - "${RUST_INGEST_API_PORT:-3010}:3010"
+    depends_on:
+      spacetimedb-init:
+        condition: service_completed_successfully
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_ENABLE_SPACETIME: ${VITE_ENABLE_SPACETIME:-false}
+        VITE_SPACETIME_HOST: ${VITE_SPACETIME_HOST:-ws://localhost:3001}
+        VITE_SPACETIME_DB: ${VITE_SPACETIME_DB:-verrow}
+        VITE_SPACETIME_MODULE: ${VITE_SPACETIME_MODULE:-verrow}
+        VITE_RUST_INGEST_API_URL: ${VITE_RUST_INGEST_API_URL:-http://localhost:3010}
+    ports:
+      - "${FRONTEND_PORT:-5173}:80"
+    depends_on:
+      rust-ingest-api:
+        condition: service_started

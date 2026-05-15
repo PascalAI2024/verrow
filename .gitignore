@@ -1,0 +1,73 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+.npm
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+target/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!*.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.csr
+*.jks
+secrets.*
+credentials.*
+service-account*.json
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+logs/
+*.log
+build_output.txt
+
+# Temporary files
+tmp/
+temp/
+uploads/
+frontend/dist/
+
+# Docker
+.docker/
+
+# Database
+*.sqlite
+*.db
+.spacetime/
+
+# Testing
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+frontend/unified-dashboard-test-report.md
+frontend/unified-dashboard-test-summary.md
+
+# Misc
+.cache/
+.parcel-cache/
+venv/
+.venv/

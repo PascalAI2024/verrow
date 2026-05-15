@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="title">Verrow social card</title>
+  <desc id="desc">Brand card for Verrow, an open lead data workbench.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eef2f1"/>
+      <stop offset="0.6" stop-color="#f7faf8"/>
+      <stop offset="1" stop-color="#fff4ef"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="730" y1="120" x2="1060" y2="456" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#172026"/>
+      <stop offset="0.58" stop-color="#2e7d63"/>
+      <stop offset="1" stop-color="#c76f4a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#172026" flood-opacity="0.17"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M0 564C124 502 268 497 398 548C540 604 674 577 804 516C944 450 1072 448 1200 508V630H0Z" fill="#2e7d63" opacity="0.08"/>
+  <g transform="translate(92 94)">
+    <rect width="92" height="92" rx="22" fill="#172026"/>
+    <path d="M24 25h27M24 42h21M24 59h16M48 25h24M52 42h20M56 59h16" stroke="#eef2f1" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M22 26l24 43 24-43" fill="none" stroke="#eef2f1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M36 48l10 10 22-27" fill="none" stroke="#c76f4a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="92" y="254" fill="#172026" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="90" font-weight="800" letter-spacing="0">Verrow</text>
+  <text x="96" y="322" fill="#3e4b4b" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="500" letter-spacing="0">Turn raw lead files into trusted records.</text>
+  <g transform="translate(96 394)" fill="none" stroke-linecap="round">
+    <rect x="0" y="0" width="454" height="94" rx="20" fill="#ffffff" stroke="#cbd5d3"/>
+    <path d="M36 28h86M36 48h122M36 68h74" stroke="#94a3a1" stroke-width="8"/>
+    <path d="M178 28h74M178 48h116M178 68h88" stroke="#2e7d63" stroke-width="8"/>
+    <path d="M344 29l16 16 34-36" stroke="#c76f4a" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M344 68h64" stroke="#c76f4a" stroke-width="8"/>
+  </g>
+  <g transform="translate(712 110)" filter="url(#shadow)">
+    <rect x="0" y="0" width="388" height="388" rx="64" fill="url(#mark)"/>
+    <path d="M86 112h114M86 162h88M86 212h70M86 262h52" stroke="#eef2f1" stroke-width="18" stroke-linecap="round" opacity="0.78"/>
+    <path d="M190 112h112M210 162h92M230 212h72M250 262h52" stroke="#eef2f1" stroke-width="18" stroke-linecap="round" opacity="0.36"/>
+    <path d="M92 116l102 180 102-180" fill="none" stroke="#eef2f1" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M156 202l42 42 78-92" fill="none" stroke="#c76f4a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="194" cy="306" r="22" fill="#2e7d63" stroke="#eef2f1" stroke-width="10"/>
+  </g>
+</svg>
