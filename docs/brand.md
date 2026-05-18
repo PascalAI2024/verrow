@@ -1,15 +1,25 @@
 # Verrow Brand
 
-Verrow is an open lead data workbench for turning inconsistent CSV exports into mapped, quality-scored, searchable records.
+Verrow is an open lead data quality workbench for turning inconsistent CSV exports into mapped, verified, quality-scored, searchable records.
 
 ## Positioning
 
 - **Name:** Verrow
 - **Repo slug:** `verrow`
-- **Tagline:** Turn raw lead files into trusted records.
+- **Tagline:** Turn messy lead files into verified, quality-scored records.
 - **Short description:** A modern workbench for mapping, cleaning, scoring, and querying messy lead CSVs.
 - **Product idea:** Lead data arrives as unverified rows: inconsistent fields, duplicate contacts, partial details, and uncertain quality. Verrow turns those rows into trusted records that can be searched, scored, exported, and improved.
-- **Name rationale:** Verrow blends "verified" and "row" to make the value proposition visible in the name.
+- **Name rationale:** Verrow blends "verified" and "row" to make the value proposition visible in the name. It is stronger as a product name when paired with a clear subtitle such as "lead data quality workbench."
+
+## Positioning Copy
+
+Use this short copy in portfolios, GitHub summaries, and proposal proof:
+
+> Verrow turns messy lead CSVs from vendors, forms, scrapes, old CRMs, and exports into mapped, quality-scored records a team can search, chart, review, and export.
+
+Use this longer copy when explaining the DMS lineage:
+
+> Verrow is the open-source successor to an internal lead data management system. The focus is narrower and cleaner: upload messy lead files, preview headers and sample rows, map columns into a canonical schema, validate the mapping with a human, score record quality, and move toward live operational records instead of spreadsheet chaos.
 
 ## Visual System
 

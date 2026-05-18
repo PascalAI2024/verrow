@@ -1,10 +1,12 @@
 # Verrow
 
-Turn raw lead files into trusted records.
+Turn messy lead files into verified, quality-scored records.
 
 ![Verrow workbench banner](docs/assets/verrow-workbench-banner.png)
 
-Verrow is an open-source lead data workbench for messy CSV files from vendors, forms, exports, research lists, scrape jobs, and old CRMs. It helps teams upload files, understand columns, map records into a standard lead schema, score quality, review datasets, and move toward live operational data without burying the workflow in a generic spreadsheet tool.
+Verrow is an open-source lead data quality workbench for messy CSV files from vendors, forms, exports, research lists, scrape jobs, and old CRMs. It helps teams upload files, understand columns, map records into a standard lead schema, score quality, review datasets, and move toward live operational data without burying the workflow in a generic spreadsheet tool.
+
+The name blends **verified** and **row**: the product is about turning untrusted rows into records a team can search, score, export, and improve.
 
 The rebooted stack is focused and current: **React 19**, **TypeScript 6**, **Material UI 9**, **Vite 8 / Vite+**, **Rust Axum**, and **SpacetimeDB 2.2**. No CI/CD is included.
 
@@ -167,6 +169,14 @@ npm run lint:vite-plus --prefix frontend
 - `POST /v1/uploads/:upload_id/process` records processing intent for the upload.
 
 ## Project Status
+
+Verrow is public, MIT licensed, and ready to use as portfolio proof for lead-data ingestion, mapping, data-quality, Rust service, and React workbench architecture.
+
+Verified locally on 2026-05-18:
+
+- `npm run rust:test` passes: 5 Rust ingest API tests.
+- `npm run build --prefix frontend` passes: TypeScript + Vite production build.
+- `gitleaks detect --source /repo --redact --no-git` passes in Docker: no leaks found.
 
 Verrow currently has a working Rust upload and mapping path plus a SpacetimeDB module with the live tables and reducers the product needs. The remaining backend milestone is replacing the Rust sidecar's no-op reducer transport with a real SpacetimeDB client bridge so confirmed uploads produce live `data_records`, quality reports, job progress, and activity events.
 

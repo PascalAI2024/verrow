@@ -2,6 +2,22 @@
 
 Use this before making the repository public.
 
+## Current Public Baseline
+
+As of 2026-05-18, the repository is public, MIT licensed, and usable as portfolio proof.
+
+Verified locally:
+
+- Rust ingest tests: `npm run rust:test` passed.
+- Frontend production build: `npm run build --prefix frontend` passed.
+- Docker-based gitleaks working-tree scan: `gitleaks detect --source /repo --redact --no-git` passed with no leaks found.
+
+Still worth doing before a larger public announcement:
+
+- Add screenshots or a short demo recording of upload, mapping, processing, and live activity.
+- Replace the no-op SpacetimeDB reducer transport with the real client bridge.
+- Add issue templates once the public roadmap is finalized.
+
 ## Required Before Public Release
 
 - Rotate any credentials that were ever committed or shared through local `.env` files.
